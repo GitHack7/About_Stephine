@@ -1,4 +1,4 @@
-- 👋 Hi, I’m Stept123
+- 👋 Hi, I’m Stephine
 - 👀 I’m interested in coding
 - 🌱 I’m currently learning in html and css
 - 💞️ I’m looking to collaborate on my webpage project 
