@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Stephine
 - 👀 I’m interested in coding
-- 🌱 I’m currently learning in html and css
+- 🌱 I’m currently a computer student 
 - 💞️ I’m looking to collaborate on my webpage project 
 - 📫 How to reach me? Go to my webpage page ang click about
 
