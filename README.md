@@ -18,9 +18,10 @@ I'm always open to collaboration and eager to connect with fellow developers. If
 
 Explore my projects, and let's create something amazing together!
 
-**Take Note!**
+**Take Note!** ✍️
 
 Remember, every line of code you write is a step closer to turning your dreams into reality. Stay motivated, keep coding, and embrace the journey of continuous learning. Together, we can achieve great things in the world of technology!
+
 Happy coding! 🌟
 
 
