@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Animation</title>
+</head>
+<body>
+  <span id="typed-text" style="font-family: Courier, monospace;"></span>
+
+  <script>
+    const text = "Hi, I'm Stephine!";
+    let index = 0;
+
+    function type() {
+      document.getElementById('typed-text').textContent = text.substring(0, index);
+      index = (index + 1) % (text.length + 1); // Wrap around when reaching end
+      setTimeout(type, 100); // Adjust typing speed here (in milliseconds)
+    }
+
+    window.onload = function() {
+      type();
+    };
+  </script>
+</body>
+</html>
 
