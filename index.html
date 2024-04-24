@@ -4,17 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Typing Animation</title>
+  <style>
+    #typed-text {
+      font-family: Courier, monospace;
+    }
+  </style>
 </head>
 <body>
-  <span id="typed-text" style="font-family: Courier, monospace;"></span>
+  <span id="typed-text"></span>
 
   <script>
     const text = "Hi, I'm Stephine!";
     let index = 0;
 
     function type() {
-      document.getElementById('typed-text').textContent = text.substring(0, index);
-      index = (index + 1) % (text.length + 1); // Wrap around when reaching end
+      if (index <= text.length) {
+        document.getElementById('typed-text').textContent = text.substring(0, index);
+        index++; 
+      } else {
+        // Add a pause at the end of the text
+        setTimeout(() => {
+          index = 0; // Reset index to start typing again
+          type(); // Start typing immediately after the pause
+        }, 2000); // Adjust pause duration here (in milliseconds)
+        return; // Exit the function to prevent further typing until the pause ends
+      }
       setTimeout(type, 100); // Adjust typing speed here (in milliseconds)
     }
 
@@ -24,4 +38,3 @@
   </script>
 </body>
 </html>
-
