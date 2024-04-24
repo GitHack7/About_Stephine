@@ -1,4 +1,17 @@
-# Hi, I'm Stephine! 👋
+<span id="typed-text" style="font-family: Courier, monospace;"></span>
+<script>
+  const text = "Hi, I'm Stephine!";
+  let index = 0;
+
+  function type() {
+    document.getElementById('typed-text').textContent = text.substring(0, index);
+    index = (index + 1) % (text.length + 1); // Wrap around when reaching end
+    setTimeout(type, 100); // Adjust typing speed here (in milliseconds)
+  }
+
+  type();
+</script>
+
 
 Welcome to my GitHub profile. I'm passionate about coding and currently pursuing my studies in information system.
 
